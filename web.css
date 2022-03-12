@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=poppinswght@700&display=swap');
+*
+{
+   margin: 0;
+   padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+body
+{
+   position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+ }
+ ol
+ {
+   position: relative;
+   display: flex;
+   align-items: center;
+   gap: 200px;
+   background: #000000;
+   
+   
+
+  
+}
+ol span {
+   list-style: none;
+   
+
+
+}
+ol span a 
+{
+   position: relative;
+   text-decoration: none;
+   line-height: 1.5em;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   color: #fff;
+   }
+   .img 
+   {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+   }
+   ul li 
+   {
+      list-style: none;
+   }
+   ul li a
+   {
+       position: relative;
+   text-decoration: none;
+   line-height: 40px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+      font-size: 40px;
+      align-items: center;
+      color: transparent;
+   -webkit-text-stroke:1px #fff;
+   }
+
+   ul li a:before
+{
+   content: attr(data-text);
+   position: absolute;
+   color: #000000;
+   width: 0;
+   overflow: hidden;
+   transition: 1s;
+   border-right: 8px solid #000000;
+}
+ul li a:hover::before
+{
+   width: 100%;
+   
+}
+
+
