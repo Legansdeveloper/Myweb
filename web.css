@@ -3,15 +3,12 @@
 {
    margin: 0;
    padding: 0;
-    box-sizing: border-box;
-    font-family: "Times New Roman", Times, serif;
-}
-body
-{
+    box-sizi1
    position: absolute;
     justify-content: center;
     align-items: center;
     background-color: #fff;
+
  }
  ol
  {
@@ -19,7 +16,7 @@ body
    display: flex;
    align-items: center;
    gap: 200px;
-   background: #000000;
+   background: #fff;
    
    
 
@@ -38,8 +35,9 @@ ol span a
    line-height: 1.5em;
    letter-spacing: 2px;
    text-transform: uppercase;
-   color: #fff;
-   }
+   color: #000000;
+
+}
    .img 
    {
       position: relative;
@@ -67,6 +65,7 @@ ol span a
 
    ul li a:before
 {
+   
    content: attr(data-text);
    position: absolute;
    color: #000000;
@@ -74,6 +73,7 @@ ol span a
    overflow: hidden;
    transition: 1s;
    border-right: 8px solid #000000;
+
 }
 ul li a:hover::before
 {
@@ -81,4 +81,7 @@ ul li a:hover::before
    
 }
 
-
+ol span a:hover
+{
+   background-color: salmon;
+}
